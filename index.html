@@ -22,6 +22,54 @@
 
             <h1>Formulário de matrícula</h1>
             <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+            <form  method= "post" enctype="multipart/form-data">
+                <fieldset class="child-info">
+                    <legend> Informações da criança</legend>
+
+                    <div class="input-wrapper">
+                        <label for="fullname">Nome completo</label>
+                        <input 
+                        id="Fullname" name="fullname"
+                        type="text" 
+                        placeholder="Qual nome da criança?">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="brith">Data de nascimento</label>
+                        <input type="date" id="brith" name="brith" lang="pt-BR">
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="gender">Gênero</label>
+                        <select type="gender" id="gender">
+                            <option value="female">Feminino</option>
+                            <option value="male">Masculino</option>
+                            <option value="na">Prefiro não responder</option>
+
+
+                        </select>
+                    </div>
+
+                    <div class="textarea-wrapper">
+                        <label for="medical-info">Informações médicas</label>
+                        <textarea name="medical-info" id="medical-info"
+                        cols="30" rows="10" 
+                        placeholder="A crianças tem algumas observações a serem feitas? (Se sim, especifiquem) "
+                        ></textarea>
+                    </div>
+
+                    <div class="droparea-wrapper">
+                        <input type="file"id=brith-file name="brith-file">
+                        <img src="assets/icons/cloud-upload.svg" alt="Icone de nuvem de download">
+                    </div>
+                    <p>
+                        Clique aqui para <br>
+                        selecionar os aquivos
+                    </p>
+
+                </fieldset>
+            </form>
             </div>
         </main>
 
