@@ -81,7 +81,7 @@
 
                 </fieldset>
 
-                <div class="fieldset address">
+                <fieldset class ="address">
                     <legend>Endereço Residencial</legend>
                     
                     <div class="input-wrapper">
@@ -118,12 +118,33 @@
                     <label for="state">Estado</label>
                     <input type="text"id="state" name="state" disabled value="RJ">
                     
-                    
-                </div>
-                </div>
-
                     </div>
                 </div>
+                </fieldset>
+
+                <fieldset class="guardian">
+                    <legend>Informações do responsável</legend>
+
+                    <div class="input-wrapper">
+                        <label for="guardian">Nome do responsável</label><input type="text" id="guardian" name="guardian">
+                        <small>Principal responsável legal e contato de emergência</small>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="phone">Telefone</label>
+                        <input type="telefone" id="phone" name="phone" 
+                        placeholder="(21) 9 1234-4567">
+
+                        <div class="input-wrapper">
+                            <label for="mail">E-mail</label>
+                            <input type="mail" name="mail" id="mail" required>
+                            <div class="error">
+                                <img src="assets/icons/alert-circle.svg" alt="ícone de alerta vermelho">
+                                <span>Insira um e-mail válido</span>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
             </form>
             </div>
         </main>
@@ -142,4 +163,4 @@
         </aside>
     </div>
 </body>
-</html>
+</ht
